@@ -1,0 +1,13 @@
+{ "class": "GraphLinksModel",
+    "nodeKeyProperty": "id",
+    "nodeDataArray": [ 
+  {"key":-1, "category":"StartState", "location":"175 0", "text":"شروع", "id":-1, "loc":"200 -161"},
+  {"category":"Conditional", "text":"شرط", "key":-3, "loc":"193.984375 -6.1875", "id":-2},
+  {"category":"WaitingForReview", "text":"عملیات1", "key":-2, "loc":"155 111.8125", "id":-3},
+  {"category":"WaitingForReview", "text":"عملیات2", "key":-2, "loc":"343.984375 -36.1875", "id":-4}
+   ],
+    "linkDataArray": [ 
+  {"from":-1, "to":-2},
+  {"from":-2, "to":-3},
+  {"from":-2, "to":-4, "text":"رد"}
+  ]}

@@ -1,0 +1,31 @@
+.dialog-header{
+    width: 100%;
+    height: 33px;
+    background-color: #f4f4f4;
+    border: 1px solid #c8c8c8;
+    font-weight: 700;
+    color: #333333;
+    padding: 0em 0.60em;
+    text-align: right !important;
+    direction: rtl;
+    font-size: 16px;
+}
+
+ .close-btn{
+    height: 33px;
+    width: 33px;
+    color: #848484;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.close-btn .mat-icon{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.close-btn:hover{
+    color: #333333;
+}

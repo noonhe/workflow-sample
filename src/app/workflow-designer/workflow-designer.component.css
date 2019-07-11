@@ -1,0 +1,38 @@
+
+.diagramPanel{
+    height: 600px;
+}
+
+
+.paletteDivContainer,.diagramDiv1{
+    height: 100%;
+   
+}
+
+.diagramDiv1{
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.diagramDiv{
+    height: 100%;
+    /* top: -100; */
+    left: -200px;
+}
+
+.paletteDiv{
+    height: 100%;
+    width: 150px;
+}
+
+.paletteDiv{
+    
+    overflow: hidden;
+
+}
+
+.diagram-btn{
+    margin-left: 5px;
+}
+

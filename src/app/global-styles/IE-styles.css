@@ -1,0 +1,188 @@
+@media screen and (min-width:0/0) and (min-resolution:+72dpi){
+  .auth-btn{
+    background-color: #ecc5aa;
+}
+app-primeng-table td a{
+  color : #ecc5aa;
+}
+.actionbtn{
+  background-color: #ecc5aa;
+  border-color: #ecc5aa;
+}
+.custom-button{
+  background-color: #ecc5aa;
+  border-color : #ecc5aa;
+}
+
+.second-custom-button{
+  background-color: #007fb9;
+  border-color : #007fb9;
+}
+
+.outline-button{
+  color: #05587d;
+  border-color : #007fb9;
+}
+    .ui-chkbox .ui-chkbox-box.ui-state-active
+    {
+      background-color: #007fb9;
+      border-color: #05587d;
+    }
+    .ui-chkbox .ui-chkbox-box{
+      border-color : #05587d;
+    }
+    .ui-dropdown-filter-icon{
+      color : #ecc5aa ;
+    }
+    .ui-dropdown-items .ui-dropdown-item.ui-state-highlight{
+      background-color:#ecc5aa;
+    }
+    .ui-multiselect-panel .ui-multiselect-items .ui-multiselect-item.ui-state-highlight{ 
+      background-color: #ecc5aa;}
+      .ui-multiselect-filter-icon{
+        color : #ecc5aa;
+      }
+    .templates-grid app-primeng-paginator .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active{
+        background-color:#007fb9;
+    }
+    .template-panel .ui-panel-titlebar-icon{
+      color: #007fb9;
+  }
+  .ui-panel-titlebar-icon{
+      color: #ecc5aa;
+    }
+  /*select button*/
+  .pattern-selects .ui-selectbutton .ui-button.ui-state-active {
+      background-color: #007fb9 ;
+      border-color: #007fb9 ;
+  }
+  .pattern-selects .ui-selectbutton .ui-button{
+      background-color: #ecc5aa ;
+      border-color: #ecc5aa ;
+  }
+  .records-select .ui-selectbutton .ui-button.ui-state-active {
+    background-color: #ecc5aa ;
+    border-color: #ecc5aa ;
+    }
+    .records-select .ui-selectbutton .ui-button{
+    background-color: #007fb9 ;
+      border-color: #007fb9 ;
+    }
+    app-primeng-dataviewlayoutoptions .ui-selectbutton .ui-button.ui-state-active,
+    app-primeng-dataviewlayoutoptions .ui-selectbutton .ui-button.ui-state-active:not(.ui-state-disabled):hover{
+      background-color: #ecc5aa ;
+      border-color : #ecc5aa ;
+    }
+  
+    p-splitButton .ui-button , 
+  .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active,
+  app-primeng-table .ui-table .ui-table-tbody > tr.ui-state-highlight
+  {
+    background-color: #ecc5aa;
+  }
+  
+    .station-info-tabs .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active,
+    .station-info-tabs .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover
+     { background-color: #007fb9;
+      border-color: #05587d;
+    }
+
+
+    .recording-info-tabs .mat-tab-header .mat-tab-label-container .mat-tab-list .mat-ink-bar{
+        background-color: #05587d !important;
+      }
+    
+    .mat-menu-panel{
+        border-top-color: #05587d;/*for IE*/
+        animation: none;
+      }
+
+      .theme-expansion-panel .mat-expansion-panel-header.mat-expanded{
+        background-color: #044d6d;/*for IE*/
+         transition: none;
+         color: white !important;
+       }
+
+       .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit{
+        background-color: #ecc5aa!important;
+      }
+  
+  }
+
+  @media screen and (min-width:0/0) and (min-resolution:+72dpi){
+    .e-icons{
+      color: #ecc5aa;
+    }
+    .e-pager .e-currentitem, .e-pager .e-currentitem:hover{
+      background-color: #ecc5aa;
+    }
+    .e-menu-item .e-checkbox-wrapper .e-frame.e-check, .e-css.e-checkbox-wrapper .e-frame.e-check{
+      color: #ecc5aa;
+      border-color: #ecc5aa;
+    }
+    .e-dropdownbase .e-list-item.e-active, .e-dropdownbase .e-list-item.e-active.e-hover{
+      color: #05587d;
+    }
+    .e-float-input:not(.e-error) input:focus ~ label.e-float-text,
+  .e-float-input.e-bigger:not(.e-error) input:focus ~ label.e-float-text,
+  .e-bigger .e-float-input:not(.e-error) input:focus ~ label.e-float-text,
+  .e-float-input.e-small:not(.e-error) input:focus ~ label.e-float-text,
+  .e-small .e-float-input:not(.e-error) input:focus ~ label.e-float-text,
+  .e-float-input.e-small.e-bigger:not(.e-error) input:focus ~ label.e-float-text,
+  .e-bigger .e-float-input.e-small:not(.e-error) input:focus ~ label.e-float-text,
+  .e-float-input:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-float-input.e-bigger:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-bigger .e-float-input:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-float-input.e-small:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-small .e-float-input:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-float-input.e-small.e-bigger:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-bigger .e-float-input.e-small:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-float-input.e-control-wrapper:not(.e-error) input:focus ~ label.e-float-text,
+  .e-float-input.e-control-wrapper.e-bigger:not(.e-error) input:focus ~ label.e-float-text,
+  .e-bigger .e-float-input.e-control-wrapper:not(.e-error) input:focus ~ label.e-float-text,
+  .e-float-input.e-control-wrapper.e-small:not(.e-error) input:focus ~ label.e-float-text,
+  .e-small .e-float-input.e-control-wrapper:not(.e-error) input:focus ~ label.e-float-text,
+  .e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error) input:focus ~ label.e-float-text,
+  .e-bigger .e-float-input.e-control-wrapper.e-small:not(.e-error) input:focus ~ label.e-float-text,
+  .e-float-input.e-control-wrapper:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-float-input.e-control-wrapper.e-bigger:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-bigger .e-float-input.e-control-wrapper:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-float-input.e-control-wrapper.e-small:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-small .e-float-input.e-control-wrapper:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error) textarea:focus ~ label.e-float-text,
+  .e-bigger .e-float-input.e-control-wrapper.e-small:not(.e-error) textarea:focus ~ label.e-float-text {
+    color: #05587d;
+  }
+  
+  .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before,
+  .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after,
+  .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before,
+  .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after,
+  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::before,
+  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::after,
+  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before,
+  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after
+  {
+    background:#05587d;
+  }
+  
+  .e-input-group:not(.e-float-icon-left):not(.e-float-input)::before, 
+  .e-input-group:not(.e-float-icon-left):not(.e-float-input)::after, 
+  .e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before, 
+  .e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after, 
+  .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before, 
+  .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after, 
+  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before, 
+  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after{
+    background: #05587d;
+  }
+  
+  .e-btn.e-flat.e-primary, .e-css.e-btn.e-flat.e-primary{
+    color: #05587d;
+  }
+  .e-grid .e-filtered::before{
+    color: #05587d;
+  }
+  }
+
+ 

@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css";
+
+@import "primeicons/primeicons.css";
+@import "primeng/resources/themes/nova-light/theme.css";
+@import "primeng/resources/primeng.min.css";
+
+@import "./app/global-styles/global-material-styles.css";
+@import "./app/global-styles/global-primeng-styles.css";
+@import "./app/global-styles/global-syncfusion-styles.css";
+@import "./app/global-styles/other-styles.css";
+
+
+:root{
+    --color : #505050; 
+    --headcolor: #ff9800;
+    --badgecolor: black;
+    --headtxtcolor:#FAFAFA;
+    --sidenavcolor: #424242;
+    --mainbg: white;
+    --mainshadow : 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    --headerboxcolor: #ffffff;
+    --headerboxbg:rgb(241, 239, 239);
+    --headerboxtitle: #000000;
+    --red: hsla(360,72%,38%);
+    --blue: hsla(201,79%, 46%);
+    --green: hsla(162, 63%,41%);
+    --yellow: hsla(42,87%,55%);
+    /* --p-dark4:
+    --p-dark3:
+    --p-dark2:
+    --p-dark1:
+    --p-base:
+    --p-light1:
+    --p-light2:
+    --p-light3:
+    --p-light4:
+    --p-light5: */
+    
+  }
+  
+  @font-face {
+    font-family: "IRANSans";
+    src: url("assets/fonts/IranSans/iran_sans.woff");
+  }
+  
+  *{
+    font-family: "IRANSans" , Tahoma;
+  }
+  
+  input {
+    font-size: inherit
+  }
+  
+  @media screen and (min-width:1199px){
+    .container{
+      max-width:1260px;
+    }
+  }
+  
+  @media screen and (min-width:1319px){
+    .container{
+      max-width:1380px;
+    }
+  }
+  
+  @media screen and (min-width:1439px){
+    .container{
+      max-width:1500px;
+    }
+  }
+  
+  @media screen and (min-width:1559px){
+    .container{
+      max-width:1620px;
+    }
+  }
+  
+  @media screen and (min-width:1679px){
+    .container{
+      max-width:1740px;
+    }
+  
+  }
+  @media screen and (min-width:1799px){
+    .container{
+      max-width:1860px;
+    }
+  
+  }
+  
+  @media screen and (min-width:1920px){
+    .container{
+      max-width:1850px;
+    }
+  }

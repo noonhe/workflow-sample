@@ -1,0 +1,10 @@
+ {
+    "class":"go.GraphLinkModel",
+    "nodeKeyProperty":"id",
+    "nodeDataArray":[
+        {"key":-1,"category":"StartState", "location":"175 0", "text":"شروع"}
+    ],
+    "linkDataArray":[
+    ]
+}
+

@@ -1,0 +1,16 @@
+<div class="diagramPanel ui-g">
+    <div class="paletteContainer ui-g-12 ui-md-1 ui-lg-1">
+      <div #paletteDiv class="paletteDiv"></div>
+    </div>
+    <div class="diagramDiv1 ui-g-12 ui-md-11 ui-lg-11">
+      <div #diagramDiv class="diagramDiv">
+      </div>
+    </div>
+
+</div>
+<div  class="ui-g actionsPanel mt-5">
+    <button pButton type="button" label="ذخیره" icon="pi pi-save" iconPos="right" class="ui-button-secondary diagram-btn" (click)="saveDiagram()"></button>
+    <button pButton type="button" label="بارگذاری" icon="pi pi-refresh" iconPos="right" class="ui-button-secondary diagram-btn" (click)="loadDiagram()"></button>
+    <button pButton type="button" label="بهبود چینش" class="ui-button-secondary diagram-btn" (click)="refreshDiagramLayout()"></button>
+</div>
+

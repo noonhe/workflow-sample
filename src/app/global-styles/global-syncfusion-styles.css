@@ -1,0 +1,301 @@
+
+.e-icons{
+    color: #494949 !important;
+    font-size: 16px !important;
+}
+.e-access::before{
+    content: '\e424';
+}
+.e-records::before{
+  content: '\e511';
+}
+.e-history::before{
+  content: '\e93e';
+}
+.e-version::before{
+  content: '\ea84';
+}
+.e-activebtn::before{
+  content: '\e7ff';
+}
+.e-preview::before{
+  content: '\e345';
+}
+.e-batch::before{
+  content: '\e309';
+}
+.e-treeview::before{
+  content: '\e22d';
+}
+.e-copy::before{
+  content: '\e280';
+}
+.e-supervisor::before{
+  content: '\e426';
+}
+.e-supervisor::before{
+  content: '\e7a3';
+}
+.e-download::before{
+  content: '\eb3f';
+}
+.e-transfer::before{
+  content: '\e589';
+}
+.e-necessary::before{
+  content: '\ea84';
+}
+.e-uploadc::before{
+  content : '\eba4';
+}
+.e-more::before{
+  content: '\ebb9';
+}
+.e-addnew::before{
+  content: '\e7f9';
+}
+.e-excel-export-icon::before{
+  content:'\e242';
+  color: green;
+  font-size: 20px;
+  font-weight: 600;
+}
+.e-add2::before{
+  content: '\e7f9';
+}
+.e-toolbar .e-tbar-btn .e-tbar-btn-text{
+  font-family: 'IRANSans' , Tahoma !important;
+}
+.e-pager .e-currentitem, .e-pager .e-currentitem:hover{
+  background-color: #494949 !important;
+}
+.e-grid .e-headercell, .e-grid .e-detailheadercell{
+  padding: 0 10px 0 !important;
+}
+.e-grid .e-headercelldiv{
+  font-size: 16px !important;
+}
+.e-grid .e-rowcell{
+  padding: 8px 10px !important;
+  font-size: 13px !important;
+  font-family: Tahoma !important;
+}
+.e-grid .e-rowcell.grid-custom-css{
+  direction: ltr !important;
+  text-align: left;
+}
+.e-grid .e-rowcell.commandCol{
+  position: absolute !important;
+  z-index: 1 !important;
+  padding: 3px 13px !important;
+}
+.e-grid.e-responsive .e-rowcell{
+  text-overflow: clip !important;
+}
+.e-grid .e-headercell.grid-custom-css{
+  direction: rtl;
+ text-align: right;
+}
+
+.e-grid.e-rtl .e-columnmenu{
+  left: 13px !important;
+}
+.e-menu-item{
+  text-align: right !important;
+}
+.e-menu-item .e-checkbox-wrapper .e-frame.e-check, .e-css.e-checkbox-wrapper .e-frame.e-check{
+  background-color: white !important;
+  color: var(--headcolor) !important;
+  border-color: var(--headcolor) !important;
+}
+.e-dropdownbase .e-list-item.e-active, .e-dropdownbase .e-list-item.e-active.e-hover{
+  color: var(--color) !important;
+}
+.e-float-input:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input.e-bigger:not(.e-error) input:focus ~ label.e-float-text,
+.e-bigger .e-float-input:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input.e-small:not(.e-error) input:focus ~ label.e-float-text,
+.e-small .e-float-input:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input.e-small.e-bigger:not(.e-error) input:focus ~ label.e-float-text,
+.e-bigger .e-float-input.e-small:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-float-input.e-bigger:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-bigger .e-float-input:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-float-input.e-small:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-small .e-float-input:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-float-input.e-small.e-bigger:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-bigger .e-float-input.e-small:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error) input:focus ~ label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error) input:focus ~ label.e-float-text,
+.e-small .e-float-input.e-control-wrapper:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error) input:focus ~ label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper.e-small:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-small .e-float-input.e-control-wrapper:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper.e-small:not(.e-error) textarea:focus ~ label.e-float-text {
+  color: var(--color) !important;
+}
+
+.e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before,
+.e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after,
+.e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before,
+.e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after,
+.e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::before,
+.e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::after,
+.e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before,
+.e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after
+{
+  background:var(--color) !important;
+}
+
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before, 
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::after, 
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before, 
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after, 
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before, 
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after, 
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before, 
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after{
+  background: var(--color) !important;
+}
+
+.e-btn.e-flat.e-primary, .e-css.e-btn.e-flat.e-primary{
+  color: var(--color) !important;
+}
+.e-grid .e-filtered::before{
+  color: var(--color) !important;
+}
+.e-ddl{
+    text-align: right;
+}
+
+/*این در اصل z-index هزار داشت که باعث میشد بعضی وقتا که منو رو باز میکنیم بیاد روی منو و منو بیخودی بسته بشه. برای همین 1 کردم0*/
+.e-spinner-pane.e-spin-show{
+  z-index: 1 !important;
+}
+
+.e-grid.e-rtl .e-gridheader .e-fltr-icon .e-sortfilterdiv{
+  margin-left: 27px;
+}
+
+
+/* radio button*/
+.e-radio + label .e-label{
+  font-family: "IRANSans","Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-size: 14px;
+}
+
+.e-radio:checked + label::before{
+  border-color: var(--headcolor) !important;
+}
+.e-radio:checked + label::after{
+  background-color: var(--headcolor)  !important;
+  color: var(--headcolor) !important; 
+}
+
+
+/*uploader*/
+.e-upload{
+  border-radius: 3px;
+  border-color: rgb(166,166,166);
+}
+
+.e-upload .e-file-select-wrap{
+  padding: 18px 16px 18px 0px;
+}
+
+.e-upload .e-file-select-wrap .e-file-drop{
+  font-family: "IRANSans","Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  margin-right: 12px;
+  margin-left: 0px;
+}
+
+
+#CGrid.e-grid.e-rtl .e-flmenu{ /*cartable grid filter menu position*/
+  float: right;
+  margin-top: -200px;
+  margin-left: -70px;
+}
+
+#MRLGrid.e-grid.e-rtl .e-flmenu{ /*Manufacture Recording List filter menu position*/
+  float: right;
+  margin-top: -390px;
+  margin-left: -85px;
+}
+
+.RGrid.e-grid.e-rtl .e-flmenu{ /*Record Table*/
+  float: right;
+  margin-top: -600px;
+  margin-left: -88px;
+}
+
+#RIGrid.e-grid.e-rtl .e-flmenu{ /*Record Info Tables*/
+  float:right;
+  margin-top: -200px;
+}
+
+.e-listview{
+  border : 1px solid #d9d9d9;
+}
+
+.e-listview .e-list-item{
+  height: 50px !important;
+  
+}
+
+.e-listview .e-list-item:not(:last-child){
+  border-bottom: 1px solid #d9d9d9 !important;
+}
+
+.listview-chckbx.e-checkbox-wrapper{
+  margin-left: 8px;
+}
+
+.e-listview .e-list-item.e-hover{
+  background-color: white !important;
+  z-index: 1;
+  box-shadow:inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0,
+             0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.e-checkicon.e-checkbox-wrapper .e-frame.e-check{
+  background-color: white !important;
+  border-color: gray !important;
+  color: gray !important;
+}
+
+.e-checkicon.e-checkbox-wrapper .e-check{
+  font-size: 8px !important;
+}
+
+.e-checkicon.e-checkbox-wrapper .e-frame.e-check::before{
+  content: '\e271';
+}
+
+.e-listview:not(.e-list-template) .e-list-item{
+  padding: 0 0;
+}
+
+.e-listview .e-list-item.e-active{
+  background-color: inherit !important;
+}
+
+.e-headertemplate-text{
+  width: 100%;
+}
+
+#inbox-list li.e-list-item:not(.e-has-child){
+  min-height: 500px !important;
+  overflow-y: auto !important;
+}
+
+.e-editable-value{
+  font-family: "IRANSans" , Tahoma !important;
+  font-size: 16px !important;
+}

@@ -1,0 +1,24 @@
+<div class="dialog-header" cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragHandle fxLayout>
+  <button mat-icon-button mat-dialog-close class="close-btn"  >
+    <mat-icon>clear</mat-icon>
+  </button>
+  <h2 mat-dialog-title style="font-family: 'IRANSans'" > مجوزها </h2>
+</div>
+<div mat-dialog-content class="modal-content" >
+  <div class="mb-4 title">
+    <span class="ui-float-label">
+      <input id="title" type="text" pInputText [(ngModel)]="data.node.text" class="w-100 wf-title">
+      <label for="title">عنوان</label>
+    </span>
+  </div>
+  <div class="permissions mb-4" >
+    <permissions-combo-box (changed)="setReviewPermissions($event)" label="مجوز تایید" ></permissions-combo-box>
+  </div>
+  <div class="email-recievers">
+    <permissions-combo-box (changed)="setNotifPermissions($event)" label="مجوز اعلان"></permissions-combo-box>
+  </div>
+</div>
+<div mat-dialog-actions >
+  <button class="modal-action-btn modal-cancel-btn" mat-flat-button (click)="onCancelClicked()" >لغو</button>
+  <button class="modal-action-btn modal-save-btn" mat-flat-button [mat-dialog-close]="data.permissionsObj">تایید</button>
+</div>

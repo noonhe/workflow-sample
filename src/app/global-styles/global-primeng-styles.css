@@ -1,0 +1,316 @@
+/*accordion*/
+.ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a .ui-accordion-toggle-icon{
+  color : #848484 !important;
+}
+
+.bom-accordion .ui-accordion{
+    margin-bottom : 15px;
+  }
+  .station-info-tabs .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a,
+  .station-info-tabs .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover a
+  {
+    background-color: #f4f4f4 !important;
+    border-color: #c8c8c8 !important;
+    color: rgb(51,51,51);
+     
+  }
+/*auto complete*/
+p-autocomplete {width:100%}
+p-autocomplete input {width: inherit}
+/*calendar*/
+.ui-calendar , .ui-calendar input{
+    width: 100% !important;
+  }
+/*checkbox*/
+.ui-chkbox .ui-chkbox-box{margin-left: 5px;}
+.ui-chkbox-label {padding: 7px;}
+.ui-chkbox .ui-chkbox-box.ui-state-active
+  {
+    background-color: var(--headerboxcolor) !important;
+    border-color: var(--color) !important;
+  }
+  .ui-chkbox .ui-chkbox-box{
+    border-color : var(--color) !important;
+  }
+
+  .inbox-checkbox.ui-chkbox .ui-chkbox-box{
+    border-color: #d9d9d9 !important;
+  }
+  .inbox-checkbox.ui-chkbox .ui-chkbox-box:hover{
+    border-color: #6b6b6b !important;
+  }
+
+  .inbox-checkbox{
+    margin-left: 10px !important;
+  }
+
+  .inbox-checkbox.ui-chkbox .ui-chkbox-box.ui-state-active{
+    background-color: #969696 !important;
+    border-color: #969696 !important;
+  }
+/*dataview*/
+.ui-dataview-layout-options{
+    direction: ltr;
+}
+.ui-dataview-layout-options .ui-button{
+    border-top-left-radius: 1px;
+    border-bottom-left-radius:1px; 
+    border-top-right-radius: 1px;
+    border-bottom-right-radius:1px; 
+}
+.ui-dataview-content .ui-panel-title{
+    font-weight: bold !important;
+}
+body .ui-dataview .ui-dataview-footer{
+    display: none;
+}
+/*dialog*/
+.recording-info-dialog .ui-dialog-content
+{
+    height: 500px !important;
+}
+
+#email-dialog .ui-dialog-content{
+  height: 500px !important;
+}
+
+.recording-info-dialog .ui-dialog{
+  z-index: 8 !important;
+}
+.ui-dialog-mask{
+  z-index: 7 !important;
+}
+/*dropdown*/
+.ui-dropdown .ui-dropdown-trigger { left: 0; right: inherit; }
+.ui-dropdown-panel .ui-dropdown-item { text-align: right; }
+.ui-dropdown-panel .ui-dropdown-filter-container .ui-dropdown-filter-icon { left: 1em; right:inherit }
+.ui-dropdown .ui-dropdown-label{ padding-right: 2.5em !important }
+.ui-dropdown-panel , .ui-dropdown-item{
+    text-align : right !important;
+}
+.recording-types .ui-dropdown{
+    width: 100% !important;
+  }
+  .proj-dropdown .ui-dropdown{
+    width: 100% !important;
+  }
+  .group-combo .ui-dropdown{
+    width: 100% !important;
+}
+.search-result-table th .ui-dropdown-label , 
+.search-result-table th .ui-multiselect-label{
+  text-align: initial;
+  font-weight: initial;
+}
+.ui-dropdown-filter-icon{
+    color : var(--headcolor) !important;
+  }
+  .ui-dropdown-items .ui-dropdown-item.ui-state-highlight{
+    background-color: var(--headcolor) !important;
+  }
+
+  .wfs-dropdown .ui-dropdown .ui-dropdown-clear-icon{
+    right: unset !important;
+    left: 2px !important;
+}
+/*fieldset*/
+.fieldsets.spec-fieldset .ui-fieldset,
+.fieldsets.search-fieldset .ui-fieldset{
+  max-width: 950px !important;
+}
+.fieldsets .ui-fieldset .ui-fieldset-content-wrapper .ui-fieldset-content{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.fieldsets .ui-fieldset .ui-fieldset-legend a ,
+.fieldsets .ui-fieldset.ui-fieldset-toggleable .ui-fieldset-legend a:hover  {
+  border : none !important;
+  background-color: white;
+}
+
+.fieldsets .ui-fieldset .ui-fieldset-legend a .ui-fieldset-toggler{
+  margin-right: 0 !important;
+  margin-left: .5em !important;
+}
+/*input*/
+.ui-inputtext{
+    height: 33px;
+}
+.ui-float-label{
+    direction: rtl !important;
+    text-align: right !important;
+}
+.ui-float-label > label{
+    right: 1em !important;
+}
+textarea.ui-inputtext{
+    height: unset !important;
+}
+/*menu*/
+.export-btn .ui-menu{
+    text-align: right;
+    background: white !important;
+  }
+  
+  .export-btn .ui-menuitem-icon{
+    float: right !important;
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+  }
+/*multiselect*/
+.ui-multiselect{ height: 35px !important; font-size: 14px !important;  }
+.ui-multiselect-panel .ui-multiselect-item {text-align: right !important;}
+.ui-multiselect-header{text-align: right !important;}
+.ui-multiselect-header .ui-multiselect-close{left:.375em !important; right: inherit !important;}
+.ui-multiselect-panel .ui-multiselect-header .ui-chkbox,
+.ui-multiselect-panel .ui-multiselect-items .ui-multiselect-item .ui-chkbox
+ { margin-right: unset !important; margin-left: 0.5em !important; }
+ .ui-multiselect-panel .ui-multiselect-items .ui-multiselect-item.ui-state-highlight{ 
+   background-color: var(--headcolor);}
+ .users-combo-box p-multiselect .ui-multiselect{
+    height: 33px !important;
+  }
+  .users-combo-box p-multiselect .ui-multiselect-label-container{
+    height: 100% !important;
+  }
+  .users-combo-box p-multiselect .ui-multiselect label{
+    font-size: 14px !important;
+    padding-right: 35px !important;
+    height: 100% !important;
+  }
+  .ui-multiselect-filter-icon{
+    color : var(--headcolor) !important;
+  }
+ /*paginator*/
+.templates-grid app-primeng-paginator .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active{
+    background-color: var(--headerboxcolor) !important;
+}
+/*panel*/
+.ui-panel .ui-panel-titlebar-icon{ margin-top: 0.1em }
+.ui-panel .ui-panel-titlebar,.ui-dialog.ui-widget .ui-dialog-titlebar {
+  padding: 0.25em .60em !important;
+}
+.template-panel .ui-panel{
+    margin-bottom: 10px;
+}
+.template-panel .ui-panel-titlebar-icon{
+    color: var(--headerboxcolor);
+}
+.ui-panel-titlebar-icon{
+    color: var(--headcolor);
+    margin-top: 5px !important;
+    margin-left: 3px !important;
+  }
+/*select button*/
+.pattern-selects .ui-selectbutton .ui-button.ui-state-active {
+    background-color: var(--headerboxcolor) !important;
+    border-color: var(--headerboxcolor) !important;
+    color: white !important;
+}
+.pattern-selects .ui-selectbutton .ui-button{
+    color: var(--headerboxcolor) !important;
+    background-color: inherit !important;
+    border-color: var(--headerboxcolor) !important;
+}
+.records-select .ui-selectbutton .ui-button.ui-state-active,
+.add-doc-options .ui-selectbutton .ui-button.ui-state-active {
+    color: white !important;
+  background-color: var(--headcolor) !important;
+  border-color: var(--headcolor) !important;
+  }
+  .records-select .ui-selectbutton .ui-button,
+  .add-doc-options .ui-selectbutton .ui-button{
+  background-color: white !important;
+    border-color: var(--headcolor) !important;
+    color: var(--headcolor) !important;
+  }
+  app-primeng-dataviewlayoutoptions .ui-selectbutton .ui-button.ui-state-active,
+  app-primeng-dataviewlayoutoptions .ui-selectbutton .ui-button.ui-state-active:not(.ui-state-disabled):hover,
+  {
+    background-color: var(--headcolor) !important;
+    border-color : var(--headcolor) !important;
+  }
+  .records-select .ui-selectbutton .ui-button:not(:last-child),
+  .add-doc-options .ui-selectbutton .ui-button:not(:last-child){
+    border-right: none !important;
+  }
+/*spinner*/
+.ui-progress-spinner-circle{
+    color: grey !important;
+}
+/*split button*/
+p-splitButton .ui-button , 
+.ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active,
+app-primeng-table .ui-table .ui-table-tbody > tr.ui-state-highlight
+{
+  background-color: var(--headcolor) !important;
+}
+/*tab*/
+.ui-tabview-nav{
+    display: flex !important;
+  }
+  .station-info-tabs .ui-tabview .ui-tabview-panels{
+    padding-top : 20px !important;
+    padding-bottom: 20px !important;
+    height: 500px;
+    min-height: fit-content;
+  }
+  .station-info-tabs .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active,
+  .station-info-tabs .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover
+   { background-color: var(--headerboxcolor) !important;
+    border-color: var(--color) !important;
+  }
+  .ui-tabview .ui-tabview-nav li a{
+    padding: 0.3em 1em !important;
+  }
+  .ui-tabview.ui-tabview-top .ui-tabview-nav li a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li a{
+    font-weight: 400 !important;
+  }
+  /*table*/
+app-primeng-table .ui-table .ui-table-tbody > tr.ui-state-highlight td a{
+    color: white !important;
+  }
+/*toast*/
+.ui-toast-message-warn{
+    background-color: white !important;
+  }
+  .ui-toast-message.ui-shadow{
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.05) !important;
+  }
+  .ui-toast .ui-toast-summary{
+    margin-right: 10px !important;
+  }
+/*widget*/
+.ui-widget { font-family: inherit; font-size: 16px !important; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: inherit; font-size: inherit !important; }
+.less-faded.ui-widget:disabled{
+    opacity: 0.75 !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+
+

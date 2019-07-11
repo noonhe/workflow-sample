@@ -1,0 +1,29 @@
+@import "../../global-styles/material-dialog.css";
+
+.modal-content{
+    padding: 15px !important;
+    padding-top: 20px !important;
+    height: 80% !important;
+    border-radius: 0 !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.modal-action-btn{
+    outline: none !important; 
+    margin-left:8px;
+}
+
+.modal-cancel-btn{
+    background-color: inherit;
+    border: 1px solid var(--headcolor);
+    color: var(--headcolor);
+}
+.modal-save-btn{
+    background-color: var(--headcolor);
+    color: white;
+}
+
+.wf-title{
+    font-family: "IRANSans";
+}
