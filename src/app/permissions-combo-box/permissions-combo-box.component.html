@@ -1,0 +1,20 @@
+<span class="ui-float-label">
+    <p-dropdown
+    id="permissionDropdown"
+    [options]="permissions" 
+    [(ngModel)]="selectedPermission" 
+    placeholder=" "
+    defaultLabel=""
+    [style]="{'width': '100%'}" 
+    dir="rtl"
+    filter="true"  
+    (onChange)="permissionChanged($event)">
+    <ng-template let-permission pTemplate="item" >
+        <span>
+        {{permission.label}}
+        </span>
+    </ng-template>
+
+</p-dropdown>
+<label for="permissionDropdown" class="float-label-dropdown">{{label}}</label>
+</span>

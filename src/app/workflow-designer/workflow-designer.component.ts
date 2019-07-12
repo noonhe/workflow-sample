@@ -7,14 +7,11 @@ import { OrthogonalLinkReshapingTool } from './gojs-tools/OrthogonalLinkReshapin
 import { MatDialog } from '@angular/material';
 import { ModalComponent } from './modal/modal.component';
 import * as blankModel from './diagram-model/blank-model.json';
-// import { ActivatedRoute } from '@angular/router';
-import { from } from 'rxjs';
 
 export interface DialogData {
   name: string,
   permissionsObj: PermissionObj
 }
-
 export interface PermissionObj {
   review: any,
   notif: any
@@ -33,6 +30,7 @@ export class WorkflowDesignerComponent implements OnInit, OnChanges, AfterViewIn
   @ViewChild('paletteDiv',{static:true}) paletteDiv: ElementRef;
   model: any;
   workflowID: string = null;
+  currentNode:go.Node;
   $ = go.GraphObject.make
   constructor(
     private modal: MatDialog,
@@ -42,12 +40,6 @@ export class WorkflowDesignerComponent implements OnInit, OnChanges, AfterViewIn
     
     const $ = go.GraphObject.make;
     this.diagram = new go.Diagram();
-    // this.diagram.initialContentAlignment = go.Spot.Center;
-    // this.diagram.allowDrop = true;
-    // this.diagram.allowCopy = true;
-    // this.diagram.allowDelete = true;
-    // this.diagram.allowResize = true;
-    // this.diagram.allowVerticalScroll = true;
     this.diagram.undoManager.isEnabled = true;
     this.diagram.toolManager.draggingTool = new GuidedDraggingTool();
     this.diagram.toolManager.resizingTool = new ResizeMultipleTool();
@@ -62,6 +54,14 @@ export class WorkflowDesignerComponent implements OnInit, OnChanges, AfterViewIn
         part.isSelected = false;
       }
     });
+
+    this.diagram.addDiagramListener("LinkDrawn",(e)=>{
+      let link = e.subject;
+      if(link.fromNode.data.category==="Conditional"){
+        console.log(link.data);
+        console.log(link.portId, link.fromPortId);
+      }
+    })
 
     let defaultAdornment =
       $(go.Adornment, 'Spot',
@@ -505,7 +505,7 @@ export class WorkflowDesignerComponent implements OnInit, OnChanges, AfterViewIn
   ngOnInit() {
     this.diagram.div = this.diagramDiv.nativeElement;
     this.palette.div = this.paletteDiv.nativeElement;
-    // this.loadDiagram()
+    this.loadDiagram()
   }
   ngOnChanges() {
 
@@ -522,21 +522,21 @@ export class WorkflowDesignerComponent implements OnInit, OnChanges, AfterViewIn
   }
 
   loadDiagram() {
-
-      this.diagram.model = go.Model.fromJson(this.model);
-    
+    console.log(blankModel)
+    this.diagram.model = go.Model.fromJson(this.model.default);
   }
+
   refreshDiagramLayout() {
     this.diagram.layoutDiagram(true);
   }
 
   openModal(nodeData, node) {
-    console.log(node)
+    this.currentNode=node;
     const modalRef = this.modal.open(ModalComponent, {
       width: '450px',
       height: '500px',
       data: {
-        node: nodeData,
+        text: nodeData.text,
         permissionsObj: {
           review: null,
           notif: null
@@ -544,10 +544,11 @@ export class WorkflowDesignerComponent implements OnInit, OnChanges, AfterViewIn
         isConditional: (nodeData.category === 'Conditional')
       }
     })
-
     modalRef.afterClosed().subscribe(res => {
       console.log(res, nodeData)
-
+      this.diagram.startTransaction();
+      this.diagram.model.set(this.currentNode.data,"text",res.text);
+      this.diagram.commitTransaction();
     })
   }
 }

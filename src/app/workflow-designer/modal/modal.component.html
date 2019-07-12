@@ -7,7 +7,7 @@
 <div mat-dialog-content class="modal-content" >
   <div class="mb-4 title">
     <span class="ui-float-label">
-      <input id="title" type="text" pInputText [(ngModel)]="data.node.text" class="w-100 wf-title">
+      <input id="title" type="text" pInputText [(ngModel)]="data.text" class="w-100 wf-title">
       <label for="title">عنوان</label>
     </span>
   </div>
@@ -20,5 +20,5 @@
 </div>
 <div mat-dialog-actions >
   <button class="modal-action-btn modal-cancel-btn" mat-flat-button (click)="onCancelClicked()" >لغو</button>
-  <button class="modal-action-btn modal-save-btn" mat-flat-button [mat-dialog-close]="data.permissionsObj">تایید</button>
+  <button class="modal-action-btn modal-save-btn" mat-flat-button [mat-dialog-close]="data">تایید</button>
 </div>
