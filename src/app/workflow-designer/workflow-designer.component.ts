@@ -58,8 +58,19 @@ export class WorkflowDesignerComponent implements OnInit, OnChanges, AfterViewIn
     this.diagram.addDiagramListener("LinkDrawn",(e)=>{
       let link = e.subject;
       if(link.fromNode.data.category==="Conditional"){
-        console.log(link.data);
-        console.log(link.portId, link.fromPortId);
+        if(link.fromPortId === "L"){
+          this.diagram.startTransaction()
+          this.diagram.model.set(link.data,"color","red");
+          this.diagram.commitTransaction()
+          // link.data.color = "red";
+          // console.log(link.data)
+        }
+        else if(link.fromPortId==="R"){
+          this.diagram.startTransaction()
+          this.diagram.model.set(link.data,"color","green");
+          this.diagram.commitTransaction()
+          // link.data.color="green";
+        }
       }
     })
 
@@ -272,7 +283,8 @@ export class WorkflowDesignerComponent implements OnInit, OnChanges, AfterViewIn
           { isPanelMain: true, stroke: "transparent", strokeWidth: 8 }
         ),
         $(go.Shape,  // the link path shape
-          { isPanelMain: true, stroke: "gray", strokeWidth: 2 }),
+          { isPanelMain: true, stroke: "gray", strokeWidth: 2 },
+          new go.Binding("stroke","color")),
         $(go.Shape,
           { toArrow: "standard", strokeWidth: 0, fill: "gray" }),
         $(go.Panel, "Auto",
@@ -287,11 +299,11 @@ export class WorkflowDesignerComponent implements OnInit, OnChanges, AfterViewIn
               stroke: "#333333",
               editable: true
             },
-            new go.Binding("text","fromPortId", (p)=>{
-              console.log(p)
-              return "yes"
-            }).ofObject(),
-            new go.Binding("text").makeTwoWay()),
+            // new go.Binding("text","fromPortId", (p)=>{
+            //   console.log(p)
+            //   return "yes"
+            // }).ofObject(),
+            new go.Binding("text","text").makeTwoWay()),
         ));
     this.palette = new go.Palette();
     this.palette.fixedBounds = new go.Rect(-60, -100, 106, 350);
